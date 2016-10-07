@@ -70,6 +70,7 @@ public class SignUp extends AppCompatActivity {
 
                     Intent intent = new Intent(SignUp.this,MainActivity.class );
                     startActivity(intent);
+                    finish();
                 }
             }
         });
@@ -90,7 +91,7 @@ public class SignUp extends AppCompatActivity {
 
     }
     private boolean isValidFname(String fname) {
-        String FNAME_PATTERN = "^ ([A-Za-z] *)+$";
+        String FNAME_PATTERN = "^([A-Za-z] *)+$";
         Pattern pattern = Pattern.compile(FNAME_PATTERN);
         Matcher matcher = pattern.matcher(fname);
         return matcher.matches();

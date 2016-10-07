@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, uname + " has logged in. \n Password: " + pword, Toast.LENGTH_LONG).show();
                     Intent intent = new Intent(MainActivity.this, OnTouch.class);
                     startActivity(intent);
+                    finish();
                 }
                 else{
                     Toast.makeText(MainActivity.this, "Invalid Email/Password ", Toast.LENGTH_LONG).show();

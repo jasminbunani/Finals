@@ -29,8 +29,7 @@ public class OnTouch extends AppCompatActivity {
             String msg = " ", msg1 = " ", msg2 = " ", quad = " ";
 
             @Override
-            public boolean onTouch(View view, MotionEvent
-                    motionEvent) {
+            public boolean onTouch(View view, MotionEvent motionEvent) {
                 int x = motionEvent.getAction();
                 switch (x) {
                     case MotionEvent.ACTION_DOWN:
@@ -62,7 +61,7 @@ public class OnTouch extends AppCompatActivity {
                         msg2 = x2 + " , " + y2;
 
                         if (y1 < y2) {
-                            msg = "Swiped Down";
+                            msg = "Swiped Down ";
                             if (x1 < x2) {
                                 msg = msg + "Swiped Right";
                                 quad = "Quadrant IV";
@@ -76,7 +75,7 @@ public class OnTouch extends AppCompatActivity {
                             motion.setText("");
                         }
                         if (y1 > y2) {
-                            msg = "Swiped Up";
+                            msg = "Swiped Up ";
                             if (x1 < x2) {
                                 msg = msg + "Swiped Right";
                                 quad = "Quadrant I";
@@ -102,5 +101,4 @@ public class OnTouch extends AppCompatActivity {
 
         });
     }
-
 }

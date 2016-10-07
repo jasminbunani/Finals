@@ -29,7 +29,7 @@
         android:layout_width="272dp"
         android:layout_height="37dp"
         android:id="@+id/email_txt"
-        android:hint="Email"
+        android:hint="Email/Username"
         android:textColorHint="#f3f8f9"
         android:layout_gravity="center_horizontal"
         android:background="#1a404c"
@@ -84,17 +84,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="53dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Need help?"
-        android:textColor="#010b12"
-        android:layout_gravity="center"
-        android:id="@+id/textView3"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="26dp" />
 
     <Button
         android:layout_width="wrap_content"
